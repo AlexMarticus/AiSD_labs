@@ -12,4 +12,4 @@ while left + 1 < right:
         left = mid
     else:
         right = mid
-print(step, right)
+print(f"Шагов потребуется: {step}")
