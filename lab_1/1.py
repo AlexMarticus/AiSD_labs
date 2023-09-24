@@ -8,7 +8,7 @@ while left + 1 < right:
     step += 1
     mid  = (left + right) // 2
     if nums [mid] < task:
-        left = mid
+        left = mid + 1
     else:
-        right = mid
+        right = mid - 1 
 print(f"Шагов потребуется: {step}, чтобы найти число {task}, с помощью бинарного поиска.")
