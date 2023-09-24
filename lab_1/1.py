@@ -1,7 +1,7 @@
 from random import randint
 step = 0
 left = 0
-nums = sorted([randint(1,5000) for i in range(3000)])
+nums = [i for i in range (1,100001)]
 task = int(input("Введите число, которое необходимо найти:"))
 right = len (nums)
 mid = 0
@@ -12,4 +12,4 @@ while left + 1 < right:
         left = mid
     else:
         right = mid
-print(f"Шагов потребуется: {step}")
+print(f"Шагов потребуется: {step}, чтобы найти число {task}, с помощью бинарного поиска.")
