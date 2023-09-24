@@ -1,4 +1,3 @@
-from random import randint
 step = 0
 left = 0
 nums = [i for i in range (1,100001)]
