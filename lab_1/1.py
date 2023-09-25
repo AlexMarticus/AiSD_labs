@@ -7,6 +7,8 @@ mid = 0
 while left + 1 < right:
     step += 1
     mid  = (left + right) // 2
+    if nums[mid]==task:
+        break
     if nums [mid] < task:
         left = mid + 1
     else:
