@@ -3,3 +3,4 @@
 Выполняют:<br />
 * [Озеров Антон](https://github.com/AlexMarticus)
 * [Панина Анна](https://github.com/paninanq)
+* [Вабищевич Андрей](https://github.com/AndrewVabishchevichK3123)
