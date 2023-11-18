@@ -2,15 +2,7 @@ from random import randint
 n = int(input('Введите длину списка, из которого необходимо выбрать наибольшую непрерывную'
               ' возрастающую подпоследовательность: '))
 arr = [randint(-100, 100) for i in range(n)]
-q = [arr[0]]
-ms = len(q)
-mq = []
-for i in arr:
-    if q[-1]<i:
-        q.append(i)
-        if ms<len(q):
-            ms = len(q)
-            mq = q
-    else:
-        q = [i]
-print(*mq)
+q = [1]*n
+for i in range(1, len(arr)):
+    if arr[i]>arr[i-1]: q[i] = q[i-1]+1
+print(f'Длина наибольшей непрерывной возрастающей подпоследовательности = {max(q)}')
